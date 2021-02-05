@@ -1,6 +1,6 @@
-# algo-and-data-structures
-Notes on chosen algorithm and data structures with implementions written in Python. Mostly those needed for an ASD course at MIM UW. 
+# Algorytmy i struktury danych
+Notatki na temat wybranych algorytmów i struktur danych z implementacjami w Pythonie. 
 
-Topics:
-1. [Splay trees](splay.md)
+Tematy:
+1. [Drzewa Splay](splay.md)
 2. 
