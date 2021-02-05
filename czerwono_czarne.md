@@ -47,6 +47,6 @@ single_rotate(z.parent.parent)
 
 ### Zamiana drzew czerwono-czarnych na 2-3-4 drzewa
 
-![czerwono_czarne_to_2-3-4](images/rb_to_2-3-4.png)
+![czerwono_czarne_to_2-3-4](images/image-20210205183034577.png)
 
 
