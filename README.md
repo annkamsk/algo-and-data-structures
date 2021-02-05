@@ -6,3 +6,4 @@ Tematy:
 2. [Algorytm Dikstry](dijkstra.md)
 3. [Drzewa Splay](splay.md)
 4. [Drzewa AVL](avl.md)
+5. [Algorytm Knutha-Morrisa-Pratta](kmp.md)
