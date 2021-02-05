@@ -18,14 +18,14 @@ Delete(x) – O(log n)
 
 W czasie procedury Splay(T, x) możemy wykonywać trzy rodzaje rotacji:
 
-#### Krok zig
+#### Pojedyncza lewa/prawa rotacja 
 
 ![Splay tree zig.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Splay_tree_zig.svg/709px-Splay_tree_zig.svg.png)
 
 
 
 ```python
-def zig(x):
+def single_rotation(x):
   p = x.parent
   
   is_left = p.left == x
@@ -43,25 +43,29 @@ def zig(x):
     x.left = p
 ```
 
-#### Krok zig-zag
+#### Podwójna rotacja lewo-lewo lub prawo-prawo
 
 ![Zigzig.gif](https://upload.wikimedia.org/wikipedia/commons/f/fd/Zigzig.gif)
 
 ```python
-def zig_zag(x):
-  zig(x.parent)
-  zig(x)
+def double_rotation_same_direction(x): 
+  p = x.parent
+  # assert p.left == x and p.parent.left == p) or (p.right == x and p.parent.right == p
+  single_rotation(x.parent)
+  single_rotation(x)
   
 ```
 
-#### Krok zag-zig
+#### Podwójna rotacja lewo-prawo lub prawo-lewo
 
 ![Zigzag.gif](https://upload.wikimedia.org/wikipedia/commons/6/6f/Zigzag.gif)
 
 ```python
-def zag_zig(x):
-  zig(x)
-  zig(x)
+def double_rotation_opposite_directions(x):
+  p = x.parent
+  assert (p.left == x and p.parent.right == p) or (p.right == x and p.parent.left == p)
+  single_rotation(x)
+  single_rotation(x)
 ```
 
 ```python
@@ -73,11 +77,11 @@ def rotate(x):
   g = p.parent
   # x's parent is a root
   if g == None:
-  	zig(x)
+  	single_rotation(x)
   elif (p.left == x and g.left == p) or (p.right == x and g.right == p):
-    zig_zag(x)
+    double_rotation_same_direction(x)
   else:
-    zag_zig(x)
+    double_rotation_opposite_directions(x)
     
 ```
 
