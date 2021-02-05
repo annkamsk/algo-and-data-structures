@@ -3,7 +3,9 @@ Notatki na temat wybranych algorytmów i struktur danych z implementacjami w Pyt
 
 Tematy:
 1. [Kopiec binarny](kopiec.md)
-2. [Algorytm Dikstry](dijkstra.md)
-3. [Drzewa Splay](splay.md)
-4. [Drzewa AVL](avl.md)
-5. [Algorytm Knutha-Morrisa-Pratta](kmp.md)
+2. [Find Union](find_union.md)
+3. [Algorytm Dikstry](dijkstra.md)
+4. [Drzewa Splay](splay.md)
+5. [Drzewa AVL](avl.md)
+6. [Drzewa czerwono-czarne](czerwono_czarne.md)
+7. [Algorytm Knutha-Morrisa-Pratta](kmp.md)
