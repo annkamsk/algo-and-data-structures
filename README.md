@@ -5,4 +5,4 @@ Tematy:
 1. [Kopiec binarny](kopiec.md)
 2. [Algorytm Dikstry](dijkstra.md)
 3. [Drzewa Splay](splay.md)
-4. 
+4. [Drzewa AVL](avl.md)
