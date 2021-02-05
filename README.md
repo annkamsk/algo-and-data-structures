@@ -2,6 +2,7 @@
 Notatki na temat wybranych algorytmów i struktur danych z implementacjami w Pythonie. 
 
 Tematy:
-1. [Algorytm Dikstry](dijkstra.md)
-2. [Drzewa Splay](splay.md)
-3. 
+1. [Kopiec binarny](kopiec.md)
+2. [Algorytm Dikstry](dijkstra.md)
+3. [Drzewa Splay](splay.md)
+4. 
